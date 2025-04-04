@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/10468faa62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-poppins: "Poppins", sans-serif;
+
+        --color-Primary-red: oklch(0.637 0.237 25.331);
+        --color-secondary-gray: oklch(0.446 0.03 256.802);
+        --color-secondary-secondary-black: oklch(0.13 0.028 261.692);
+        --color-accent: oklch(98.08% 0.0079 73.75);
+
+        /* ... */
+      }
+    </style>
+    <title>Furniro</title>
+  </head>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <div
+      class="navbar flex items-center justify-between h-[5rem] w-full max-w-[1440px] mx-auto p-4 lg:p-0"
+    >
+      <a href="index.html">
+        <div class="logo flex gap-2 items-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-md">
+            <img src="./assets/logo.png" alt="" width="64" />
+          </div>
+          <h2 class="text-2xl font-bold">Furniro</h2>
+        </div>
+      </a>
+      <div
+        class="navLinks hidden lg:flex items-center gap-8 text-md font-medium"
+      >
+        <a
+          href="index.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Home</a
+        >
+        <a
+          href="shop.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Shop</a
+        >
+        <a
+          href="#"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >About</a
+        >
+        <a
+          href="contact.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Contact</a
+        >
+        <a
+          href="blog.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Blog</a
+        >
+      </div>
+      <div class="navIcons flex gap-6 text-xl items-center">
+        <i class="fa-regular fa-user cursor-pointer"></i>
+        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+        <i class="fa-regular fa-heart cursor-pointer"></i>
+        <a href="cart.html"
+          ><i class="fa-solid fa-cart-shopping cursor-pointer"></i
+        ></a>
+        <div class="block lg:hidden pl-6">
+          <i class="fa-solid fa-bars cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shop Banner -->
+    <div
+      class="w-full h-[300px] flex items-center justify-center bg-Primary-red/20 backdrop-filter backdrop-blur-[20px] bg-cover bg-center bg-no-repeat bg-[url(./assets/shop-banner.jpeg)]"
+    >
+      <div class="flex flex-col justify-center items-center gap-3">
+        <h2 class="text-2xl font-semibold">Blog</h2>
+        <div class="flex items-center gap-3">
+          <p class="font-medium">Home</p>
+          <i class="fa-solid fa-chevron-right"></i>
+          <p>BLog</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="py-20">
+      <div
+        class="w-full max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div class="md:col-span-2">
+          <article class="bg-white rounded-lg overflow-hidden">
+            <img
+              src="./assets/blogPost-1.jpeg"
+              alt="Post 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-secondary-gray mb-4">
+                <div class="flex items-center mr-4">
+                  <i class="fa-solid fa-user mr-2"></i>
+                  <span>Admin</span>
+                </div>
+                <div class="flex items-center mr-4">
+                  <i class="fa-solid fa-calendar-days mr-2"></i>
+                  <span>14 Oct 2022</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-tag mr-2"></i>
+                  <span>Wood</span>
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold text-secondary-black mb-4">
+                Handmade pieces that took time to make
+              </h2>
+              <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus
+                mauris vitae ultricies leo integer malesuada nunc. In nulla
+                posuere sollicitudin aliquam ultrices. Morbi blandit cursus
+                risus at ultrices mi tempus imperdiet. Libero enim sed faucibus
+                turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras
+                pulvinar mattis nunc sed blandit libero. Pellentesque elit
+                ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque
+                ornare aenean euismod elementum.
+              </p>
+              <button href="#" class="py-6 border-Secondary-black border-b-2">
+                Read more
+              </button>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg overflow-hidden">
+            <img
+              src="./assets/blogPost-2.jpeg"
+              alt="Post 2"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-secondary-gray mb-4">
+                <div class="flex items-center mr-4">
+                  <i class="fa-solid fa-user mr-2"></i>
+                  <span>Admin</span>
+                </div>
+                <div class="flex items-center mr-4">
+                  <i class="fa-solid fa-calendar-days mr-2"></i>
+                  <span>15 Oct 2022</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-tag mr-2"></i>
+                  <span>Metal</span>
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold text-secondary-black mb-4">
+                Modern art in metal
+              </h2>
+              <p class="text-gray-600 mb-4">
+                Another blog post content goes here. You can add more text to
+                make it longer. This is just an example to fill the space. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus
+                mauris vitae ultricies leo integer malesuada nunc. In nulla
+                posuere sollicitudin aliquam ultrices. Morbi blandit cursus
+                risus at ultrices mi tempus imperdiet. Libero enim sed faucibus
+                turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras
+                pulvinar mattis nunc sed blandit libero. Pellentesque elit
+                ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque
+                ornare aenean euismod elementum.
+              </p>
+              <button href="#" class="py-6 border-Secondary-black border-b-2">
+                Read more
+              </button>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg overflow-hidden">
+            <img
+              src="./assets/blogPost-3.jpeg"
+              alt="Post 3"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-secondary-gray mb-4">
+                <div class="flex items-center mr-4">
+                  <i class="fa-solid fa-user mr-2"></i>
+                  <span>Admin</span>
+                </div>
+                <div class="flex items-center mr-4">
+                  <i class="fa-solid fa-calendar-days mr-2"></i>
+                  <span>16 Oct 2022</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-tag mr-2"></i>
+                  <span>Ceramic</span>
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold text-secondary-black mb-4">
+                Unique ceramic designs
+              </h2>
+              <p class="text-gray-600 mb-4">
+                Yet another blog post. You can add more content to make it
+                longer. This is just a filler text. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Mus mauris vitae ultricies leo
+                integer malesuada nunc. In nulla posuere sollicitudin aliquam
+                ultrices. Morbi blandit cursus risus at ultrices mi tempus
+                imperdiet. Libero enim sed faucibus turpis in. Cursus mattis
+                molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed
+                blandit libero. Pellentesque elit ullamcorper dignissim cras
+                tincidunt. Pharetra et ultrices neque ornare aenean euismod
+                elementum.
+              </p>
+              <button href="#" class="py-6 border-Secondary-black border-b-2">
+                Read more
+              </button>
+            </div>
+          </article>
+
+          <div
+            class="pagination flex items-center justify-center gap-4 py-6 lg:py-10"
+          >
+            <div class="px-4 py-2 bg-Primary-red rounded-md cursor-pointer">
+              <p>1</p>
+            </div>
+            <div class="px-4 py-2 bg-accent rounded-md cursor-pointer">
+              <p>2</p>
+            </div>
+            <div class="px-4 py-2 bg-accent rounded-md cursor-pointer">
+              <p>3</p>
+            </div>
+            <div class="px-4 py-2 bg-accent rounded-md cursor-pointer">
+              <p>Next</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="md:col-span-1 mt-6">
+          <div class="bg-white p-6 rounded-lg">
+            <div class="flex flex-col items-start justify-between mb-4">
+              <div class="relative w-full border p-2 rounded-md mb-4">
+                <input type="text" />
+                <i
+                  class="fa-solid fa-magnifying-glass text-Secondary-gray absolute right-3 top-3"
+                ></i>
+              </div>
+              <h3 class="text-lg font-semibold text-secondary-black text-start">
+                Categories
+              </h3>
+            </div>
+            <ul class="text-gray-600">
+              <li class="flex justify-between py-2 border-b border-gray-200">
+                <span>Crafts</span>
+                <span>2</span>
+              </li>
+              <li class="flex justify-between py-2 border-b border-gray-200">
+                <span>Design</span>
+                <span>8</span>
+              </li>
+              <li class="flex justify-between py-2 border-b border-gray-200">
+                <span>Handmade</span>
+                <span>7</span>
+              </li>
+              <li class="flex justify-between py-2 border-b border-gray-200">
+                <span>Interior</span>
+                <span>1</span>
+              </li>
+              <li class="flex justify-between py-2">
+                <span>Wood</span>
+                <span>6</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-secondary-black mb-4">
+                Recent Posts
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-center">
+                  <img
+                    src="./assets/blogPostSmall-1.jpeg"
+                    alt="Small Post 1"
+                    class="w-16 h-16 object-cover rounded-md mr-4"
+                  />
+                  <div>
+                    <h4 class="text-sm font-semibold text-secondary-black">
+                      Going all-in with millennial design
+                    </h4>
+                    <p class="text-xs text-secondary-gray">03 Aug 2022</p>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <img
+                    src="./assets/blogPostSmall-2.jpeg"
+                    alt="Small Post 2"
+                    class="w-16 h-16 object-cover rounded-md mr-4"
+                  />
+                  <div>
+                    <h4 class="text-sm font-semibold text-secondary-black">
+                      Exploring new ways of decorating
+                    </h4>
+                    <p class="text-xs text-secondary-gray">03 Aug 2022</p>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <img
+                    src="./assets/blogPostSmall-3.jpeg"
+                    alt="Small Post 3"
+                    class="w-16 h-16 object-cover rounded-md mr-4"
+                  />
+                  <div>
+                    <h4 class="text-sm font-semibold text-secondary-black">
+                      Handmade pieces that took time to make
+                    </h4>
+                    <p class="text-xs text-secondary-gray">03 Aug 2022</p>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <img
+                    src="./assets/blogPostSmall-4.jpeg"
+                    alt="Small Post 4"
+                    class="w-16 h-16 object-cover rounded-md mr-4"
+                  />
+                  <div>
+                    <h4 class="text-sm font-semibold text-secondary-black">
+                      Modern home in Milan
+                    </h4>
+                    <p class="text-xs text-secondary-gray">03 Aug 2022</p>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <img
+                    src="./assets/blogPostSmall-5.jpeg"
+                    alt="Small Post 5"
+                    class="w-16 h-16 object-cover rounded-md mr-4"
+                  />
+                  <div>
+                    <h4 class="text-sm font-semibold text-secondary-black">
+                      Colorful office ideas
+                    </h4>
+                    <p class="text-xs text-secondary-gray">03 Aug 2022</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="w-full h-[150px] bg-accent flex items-center justify-center">
+      <div
+        class="max-w-[1530px] mx-auto w-full flex items-center justify-between px-4"
+      >
+        <div class="flex gap-4 items-center justify-center">
+          <i class="fa-solid fa-trophy text-2xl lg:text-5xl"></i>
+          <div class="flex flex-col">
+            <p class="text-lg font-semibold">High Quality</p>
+            <p class="text-xs lg:text-sm text-secondary-gray">
+              Crafted from top materials
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center justify-center">
+          <i class="fa-solid fa-check-circle text-2xl lg:text-5xl"></i>
+          <div class="flex flex-col">
+            <p class="text-lg font-semibold">Warranty Protection</p>
+            <p class="text-xs lg:text-sm text-secondary-gray">Over 2 years</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center justify-center">
+          <i class="fa-solid fa-box-open text-2xl lg:text-5xl"></i>
+          <div class="flex flex-col">
+            <p class="text-lg font-semibold">Free Shipping</p>
+            <p class="text-xs lg:text-sm text-secondary-gray">
+              Order over 150 $
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center justify-center">
+          <i class="fa-solid fa-headset text-2xl lg:text-5xl"></i>
+          <div class="flex flex-col">
+            <p class="text-lg font-semibold">24/7 Support</p>
+            <p class="text-xs lg:text-sm text-secondary-gray">
+              Dedicated support
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-[1440px] mx-auto">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Company Info -->
+          <div class="lg:col-span-1">
+            <h2 class="text-2xl font-bold mb-6">Funiro.</h2>
+            <address class="not-italic text--secondary-gray leading-relaxed">
+              400 University Drive Suite 200 Coral<br />
+              Gables,<br />
+              FL 33134 USA
+            </address>
+          </div>
+
+          <!-- Links -->
+          <div class="lg:col-span-1">
+            <h3 class="text-lg text-secondary-gray mb-6">Links</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="hover:text-secondary-gray">Home</a></li>
+              <li><a href="#" class="hover:text-secondary-gray">Shop</a></li>
+              <li><a href="#" class="hover:text-secondary-gray">About</a></li>
+              <li><a href="#" class="hover:text-secondary-gray">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Help -->
+          <div class="lg:col-span-1">
+            <h3 class="text-lg text-secondary-gray mb-6">Help</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-secondary-gray"
+                  >Payment Options</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-secondary-gray">Returns</a></li>
+              <li>
+                <a href="#" class="hover:text-secondary-gray"
+                  >Privacy Policies</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="lg:col-span-1">
+            <h3 class="text-lg text-secondary-gray mb-6">Newsletter</h3>
+            <form class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="flex-grow px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-secondary-secondary-gray bg-transparent"
+              />
+              <button
+                type="submit"
+                class="mt-4 sm:mt-0 lg:mt-4 xl:mt-0 px-4 py-2 bg-white text-secondary-secondary-black font-medium border-b border-secondary-secondary-black hover:bg-gray-100 transition-colors"
+              >
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full h-px bg-gray-200 my-8"></div>
+
+        <!-- Copyright -->
+        <div class="text-secondary-gray">
+          <p>2023 furino. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/10468faa62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-poppins: "Poppins", sans-serif;
+
+        --color-Primary-red: oklch(0.637 0.237 25.331);
+        --color-secondary-gray: oklch(0.446 0.03 256.802);
+        --color-secondary-secondary-black: oklch(0.13 0.028 261.692);
+        --color-accent: oklch(98.08% 0.0079 73.75);
+
+        /* ... */
+      }
+    </style>
+    <title>Furniro</title>
+  </head>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <div
+      class="navbar flex items-center justify-between h-[5rem] w-full max-w-[1440px] mx-auto p-4 lg:p-0"
+    >
+      <div class="logo flex gap-2 items-center">
+        <div class="w-16 h-16 flex items-center justify-center rounded-md">
+          <img src="./assets/logo.png" alt="" width="64" />
+        </div>
+        <h2 class="text-2xl font-bold">Furniro</h2>
+      </div>
+      <div
+        class="navLinks hidden lg:flex items-center gap-8 text-md font-medium"
+      >
+        <a
+          href="index.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Shop</a
+        >
+        <a
+          href="#"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >About</a
+        >
+        <a
+          href="contact.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Contact</a
+        >
+        <a
+          href="blog.html"
+          class="text-secondary-black hover:text-secondary-gray transition-colors"
+          >Blog</a
+        >
+      </div>
+      <div class="navIcons flex gap-6 text-xl items-center">
+        <i class="fa-regular fa-user cursor-pointer"></i>
+        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+        <i class="fa-regular fa-heart cursor-pointer"></i>
+        <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+        <div class="block lg:hidden pl-6">
+          <i class="fa-solid fa-bars cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="w-full bg-accent">
+      <div class="w-full h-[80px] max-w-[1440px] mx-auto flex items-center">
+        <div class="flex items-center gap-6">
+          <p class="text-secondary-gray text-md">Home</p>
+          <i class="fa-solid fa-chevron-right text-sm"></i>
+          <p class="text-secondary-gray text-md">Shop</p>
+          <p class="text-xl">|</p>
+          <p>Asgaard Sofa</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single Product -->
+    <div class="w-full max-w-[1440px] mx-auto my-20">
+      <div class="grid grid-col-1 lg:grid-cols-2 gap-10">
+        <div class="left-col flex gap-10">
+          <div class="images-col flex flex-col gap-4 w-1/6">
+            <div class="bg-accent rounded-md w-30 h-30">
+              <img
+                class="bg-cover bg-center p-2"
+                src="./assets/asgaard-sofa-1.png"
+                alt="asgaard-sofa-1"
+              />
+            </div>
+            <div class="bg-accent rounded-md w-30 h-30">
+              <img
+                class="bg-cover bg-center p-2"
+                src="./assets/asgaard-sofa-2.png"
+                alt="asgaard-sofa-2"
+              />
+            </div>
+            <div class="bg-accent rounded-md">
+              <img
+                class="bg-contain bg-center p-2 w-30 h-30"
+                src="./assets/asgaard-sofa-3.png"
+                alt="asgaard-sofa-3"
+              />
+            </div>
+            <div class="bg-accent rounded-md">
+              <img
+                class="bg-cover bg-center p-2 w-30 h-30"
+                src="./assets/asgaard-sofa-4.png"
+                alt="asgaard-sofa-4"
+              />
+            </div>
+          </div>
+          <div
+            class="main-image-col w-5/6 bg-accent p-2 rounded-md bg-cover bg-center"
+          >
+            <img src="./assets/asgaard-sofa-1.png" alt="asgaard-sofa-1" />
+          </div>
+        </div>
+        <div class="right-col flex flex-col justify-between">
+          <h2 class="text-2xl font-semibold">Asgaard Sofa</h2>
+          <p class="text-secondary-gray text-lg">Rs. 250,000.00</p>
+          <div class="flex f items-center">
+            <div class="flex items-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="flex items-center gap-4 bg-white -ml-2 px-4">
+              <p class="text-secondary-gray text-xl">|</p>
+              <p class="text-secondary-gray">5 Customer Review</p>
+            </div>
+          </div>
+          <p class="text-justify">
+            Setting the bar as one of the loudest speakers in its class, the
+            Kilburn is a compact, stout-hearted hero with a well-balanced audio
+            which boasts a clear midrange and extended highs for a sound.
+          </p>
+          <div class="size-color flex flex-col">
+            <p class="text-secondary-gray">Size</p>
+            <div class="flex items-center gap-2">
+              <div class="bg-Primary-red px-4 py-2 rounded-md">L</div>
+              <div class="bg-accent px-4 py-2 rounded-md">XL</div>
+              <div class="bg-accent px-4 py-2 rounded-md">XS</div>
+            </div>
+          </div>
+          <div class="size-color flex flex-col">
+            <p class="text-secondary-gray">Color</p>
+            <div class="flex items-center gap-2">
+              <div class="bg-blue-600 p-4 rounded-full"></div>
+              <div class="bg-black p-4 rounded-full"></div>
+              <div class="bg-red-600 p-4 rounded-full"></div>
+            </div>
+          </div>
+          <div class="quantity-cart-compare flex items center justify-between">
+            <div class="quantity flex items-center gap-2 p-2 border rounded-md">
+              <p class="p-4">-</p>
+              <p class="p-4">1</p>
+              <p class="p-4">+</p>
+            </div>
+            <div class="cart flex items-center gap-2 p-2 border rounded-md">
+              <p class="px-16 py-4">Add to Cart</p>
+            </div>
+            <div class="compare flex items-center gap-2 p-2 border rounded-md">
+              <p class="px-16 py-4">Compare</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="hidden lg:block"></div>
+        <div class="p-8">
+          <table class="max-w-md mx-auto w-full">
+            <hr class="mb-8 text-secondary-gray" />
+            <tr>
+              <td class="font-semibold text-secondary-gray py-2">SKU</td>
+              <td class="text-secondary-gray">: SS001</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-secondary-gray py-2">Category</td>
+              <td class="text-secondary-gray">: Sofas</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-secondary-gray py-2">Tags</td>
+              <td class="text-secondary-gray">: Sofa, Chair, Home, Shop</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-secondary-gray">Share</td>
+              <td>
+                <div class="flex items-center">
+                  <div class="flex space-x-4">
+                    <a
+                      href="#"
+                      class="text-white bg-black rounded-full px-4 py-2"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white bg-black px-4 py-2">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="text-white bg-black rounded-full px-4 py-2"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="w-full">
+      <div class="w-full max-w-[1440px] mx-auto">
+        <div
+          class="flex border-t border-gray-200 py-10 items-center justify-center"
+        >
+          <div class="px-4 py-2 font-semibold text-3xl text-secondary-gray">
+            Description
+          </div>
+          <div class="px-4 py-2 font-semibold text-3xl text-gray-400">
+            Additional Information
+          </div>
+          <div class="px-4 py-2 font-semibold text-3xl text-gray-400">
+            Reviews [5]
+          </div>
+        </div>
+
+        <div class="text-gray-600 mb-8">
+          <p>
+            Embodying the raw, wayward spirit of rock n roll, the Kilburn
+            portable active stereo speaker takes the unmistakable look and sound
+            of Marshall, unplugs the chords, and takes the show on the road.
+          </p>
+          <br />
+          <p>
+            Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+            vintage styled engineering. Setting the bar as one of the loudest
+            speakers in its class, the Kilburn is a compact, stout-hearted hero
+            with a well-balanced audio which boasts a clear midrange and
+            extended highs for a sound that is both articulate and pronounced.
+            The analogue knobs allow you to fine tune the controls to your
+            personal preferences while the guitar-influenced leather strap
+            enables easy and stylish travel.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center"">
+            <img
+              src="./assets/description-sofa.png"
+              alt="Sofa 1"
+              class="w-full"
+            />
+          </div>
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center"
+          >
+            <img
+              src="./assets/description-sofa-2.png"
+              alt="Sofa 2"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="ourProducts w-full max-w-[1440px] mx-auto">
+        <h3 class="text-3xl font-bold pb-4 lg:pb-10 text-center">Our Products</h3>
+        <div
+          class="productGrid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <div class="bg-gray-100 flex flex-col gap-2 h-[550px]">
+            <img
+              src="./assets/products-1.png"
+              alt="product-1"
+              class="bg-cover overflow-hidden w-full h-2/3"
+            />
+            <div class="productText p-4 flex flex-col gap-2">
+              <p class="text-lg font-semibold">Syltherine</p>
+              <p class="text-xs text-secondary-gray">Stylish cafe chair</p>
+              <div class="flex items-center justify-between">
+                <p class="text-md font-semibold">Rp 2.500.000</p>
+                <p class="line-through text-sm text-secondary-gray">
+                  Rp 3.500.000
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 flex flex-col gap-2 h-[550px] relative">
+            <div
+              class="absolute flex flex-col gap-6 items-center justify-center w-full h-full inset-0 bg-secondary-black/50 top-0 left-0"
+            >
+              <button
+                class="bg-white text-Primary-red font-semibold px-4 py-2 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+              <div
+                class="flex w-full max-w-3/4 items-center justify-between gap-4"
+              >
+                <div class="flex items-center gap-2 cursor-pointer">
+                  <i class="fa-solid fa-share-nodes text-white"></i>
+                  <p class="text-xs font-semibold text-white">Share</p>
+                </div>
+  
+                <div class="flex items-center gap-2 cursor-pointer">
+                  <i class="fa-solid fa-code-compare text-white"></i>
+                  <p class="text-xs font-semibold text-white">Compare</p>
+                </div>
+  
+                <div class="flex items-center gap-2 cursor-pointer">
+                  <i class="fa-solid fa-heart text-white"></i>
+                  <p class="text-xs font-semibold text-white">Like</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/products-2.png"
+              alt="product-2"
+              class="bg-cover overflow-hidden w-full h-2/3"
+            />
+            <div class="productText p-4 flex flex-col gap-2">
+              <p class="text-lg font-semibold">Leviso</p>
+              <p class="text-xs text-secondary-gray">Stylish cafe chair</p>
+              <div class="flex items-center justify-between">
+                <p class="text-md font-semibold">Rp 2.500.000</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 flex flex-col gap-2 h-[550px]">
+            <img
+              src="./assets/products-3.png"
+              alt="product-3"
+              class="bg-cover overflow-hidden w-full h-2/3"
+            />
+            <div class="productText p-4 flex flex-col gap-2">
+              <p class="text-lg font-semibold">Lolito</p>
+              <p class="text-xs text-secondary-gray">Luxury big sofa</p>
+              <div class="flex items-center justify-between">
+                <p class="text-md font-semibold">Rp 2.500.000</p>
+                <p class="line-through text-sm text-secondary-gray">
+                  Rp 3.500.000
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 flex flex-col gap-2 h-[550px]">
+            <img
+              src="./assets/products-4.png"
+              alt="product-1"
+              class="bg-cover overflow-hidden w-full h-2/3"
+            />
+            <div class="productText p-4 flex flex-col gap-2">
+              <p class="text-lg font-semibold">Respira</p>
+              <p class="text-xs text-secondary-gray">
+                Outdoor bar table and stool
+              </p>
+              <div class="flex items-center justify-between">
+                <p class="text-md font-semibold">Rp 7.500.000</p>
+                <p class="line-through text-sm text-secondary-gray">
+                  Rp 10.500.000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showMoreBtn flex justify-center py-6 lg:py-10">
+          <button class="px-6 lg:px-12 py-2 border border-Primary-red">
+            Show More
+          </button>
+        </div>
+      </div>
+
+          <!-- Footer -->
+    <footer class="w-full py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[1440px] mx-auto">
+          <!-- Main Footer Content -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="lg:col-span-1">
+              <h2 class="text-2xl font-bold mb-6">Funiro.</h2>
+              <address class="not-italic text--secondary-gray leading-relaxed">
+                400 University Drive Suite 200 Coral<br />
+                Gables,<br />
+                FL 33134 USA
+              </address>
+            </div>
+  
+            <!-- Links -->
+            <div class="lg:col-span-1">
+              <h3 class="text-lg text-gray-400 mb-6">Links</h3>
+              <ul class="space-y-4">
+                <li><a href="#" class="hover:text-secondary-gray">Home</a></li>
+                <li><a href="#" class="hover:text-secondary-gray">Shop</a></li>
+                <li><a href="#" class="hover:text-secondary-gray">About</a></li>
+                <li><a href="#" class="hover:text-secondary-gray">Contact</a></li>
+              </ul>
+            </div>
+  
+            <!-- Help -->
+            <div class="lg:col-span-1">
+              <h3 class="text-lg text-gray-400 mb-6">Help</h3>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#" class="hover:text-secondary-gray"
+                    >Payment Options</a
+                  >
+                </li>
+                <li><a href="#" class="hover:text-secondary-gray">Returns</a></li>
+                <li>
+                  <a href="#" class="hover:text-secondary-gray"
+                    >Privacy Policies</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Newsletter -->
+            <div class="lg:col-span-1">
+              <h3 class="text-lg text-gray-400 mb-6">Newsletter</h3>
+              <form class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
+                <input
+                  type="email"
+                  placeholder="Enter Your Email Address"
+                  class="flex-grow px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-secondary-secondary-gray bg-transparent"
+                />
+                <button
+                  type="submit"
+                  class="mt-4 sm:mt-0 lg:mt-4 xl:mt-0 px-4 py-2 bg-white text-secondary-secondary-black font-medium border-b border-secondary-secondary-black hover:bg-gray-100 transition-colors"
+                >
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Divider -->
+          <div class="w-full h-px bg-gray-200 my-8"></div>
+  
+          <!-- Copyright -->
+          <div class="text-secondary-gray">
+            <p>2023 furino. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
